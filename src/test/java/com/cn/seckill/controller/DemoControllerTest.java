@@ -4,6 +4,7 @@ import com.cn.seckill.SeckillApplication;
 import com.cn.seckill.SeckillApplicationTests;
 import com.cn.seckill.domain.User;
 import com.cn.seckill.service.UserServiceImpl;
+import com.cn.seckill.util.MD5Util;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import redis.clients.jedis.Jedis;
@@ -17,7 +18,6 @@ import static org.junit.Assert.*;
 public class DemoControllerTest extends SeckillApplicationTests{
     @Test
     public void insert() throws Exception {
-
     }
 
 }
