@@ -11,7 +11,6 @@ import javax.validation.constraints.NotNull;
 /**
  * Created by zhumc on 2019/3/27.
  */
-@Data
 public class LoginVo {
     @NotNull
     @IsMobile
@@ -19,4 +18,20 @@ public class LoginVo {
     @NotNull
     @Length(min = 32)
     private String password;
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }

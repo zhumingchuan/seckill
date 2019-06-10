@@ -87,7 +87,6 @@ public class AccessInterceptor extends HandlerInterceptorAdapter {
                 }
                 key += "_"+user.getId();
             }else {
-
             }
             AccessKey ak = AccessKey.withExpire(seconds);
             Integer count = redisService.get(ak, key, Integer.class);
@@ -98,8 +97,6 @@ public class AccessInterceptor extends HandlerInterceptorAdapter {
                 return false;
             }
         }
-
-
         return true;
     }
 }
